@@ -23,11 +23,6 @@ public class 成绩判断 {
             System.out.println("D");
         }
         
-        //switch
-            // switch(xx){
-            //     case xx>90:
-            //         System.out.println("A");
-            //         break;
-            // }
+
     }
 }
