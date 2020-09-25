@@ -9,6 +9,10 @@ public class P16{
 class speak {
     
     public static void main(String[] args) {
+        /*
+        您好，很高兴认识您
+        nice to meet you
+        */
         P16 zhang = new P16();
         zhang.speaka();
     }

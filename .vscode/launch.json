@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - whilexy12000",
+            "request": "launch",
+            "mainClass": "D925.whilexy12000",
+            "projectName": "java_1b08cc8f"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

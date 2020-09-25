@@ -13,10 +13,10 @@ public class 成绩判断 {
         if (xx > 90 && xx <=100) {
             System.out.println("A");
         }
-        else if (xx > 80) {
+        else if (xx > 80 && xx <=100) {
             System.out.println("B");
         }
-        else if (xx > 60) {
+        else if (xx > 60 && xx <=100) {
             System.out.println("C");
         }
         else{
