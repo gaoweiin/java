@@ -1,6 +1,8 @@
+
 package D925;
 
-public class whilexy12000 {
+
+public class D925 {
     public static void while12000() {
         //110
         int n = 0;
@@ -47,12 +49,19 @@ public class whilexy12000 {
     }
 
     public static void lx(){
-        System.out.println("      *\n ***\n*****\n    ***\n       *";)
+        /*
+          *
+         ***
+        *****
+         ***
+          *
+        */
+        System.out.println("  *\n ***\n*****\n ***\n  *");
     }
     public static void main(String[] args) {
-        // while12000();
+        while12000();
         y2ujc();
-        // ta();
-        // lx();
+        ta();
+         lx();
     }
 }
