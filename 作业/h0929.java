@@ -31,7 +31,4 @@ public class h0929 {
         }
         System.out.println(sum);
     }
-}
-public class h0929 {
-    
-}
+}    
