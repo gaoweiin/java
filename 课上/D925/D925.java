@@ -56,7 +56,26 @@ public class D925 {
          ***
           *
         */
-        System.out.println("  *\n ***\n*****\n ***\n  *");
+        // System.out.println("  *\n ***\n*****\n ***\n  *");
+        for (int i = 1; i < 4; i++) {
+            for (int j = 1; j < 4 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j < i + i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for (int i = 2; i >=1; i--) {
+            for (int j = 1; j < 4 - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j < i + i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         while12000();

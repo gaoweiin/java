@@ -1,5 +1,4 @@
-
-import java.util.Scanner;
+package d918;
 
 public class 输入输出 {
     public static void main(String[] args) {
