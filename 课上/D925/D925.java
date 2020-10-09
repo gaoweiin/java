@@ -81,6 +81,6 @@ public class D925 {
         while12000();
         y2ujc();
         ta();
-         lx();
+        lx();
     }
 }
