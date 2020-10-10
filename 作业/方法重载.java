@@ -28,12 +28,12 @@ class Max {
 
     void max(int a, int b, int c) {
 
-        System.out.println(Math.max(Math.max(a, b), Math.max(c, b)));
+        System.out.println(Math.max(a, Math.max(c, b)));
 
     }
     void max(double a, double b, double c) {
 
-        System.out.println(Math.max(Math.max(a, b), Math.max(c, b)));
+        System.out.println(Math.max(a, Math.max(c, b)));
 
     }
 }
@@ -44,7 +44,7 @@ public class 方法重载 {
         Book b = new Book("gadh",2000,"ag");
         b.detail();
         Max m = new Max();
-        m.max(1.0, 50.2, 60.8);
-        m.max(1, 50, 8888);
+        m.max(10, 12, 15);
+        m.max(10.5, 12, 15.5);
     }
 }
