@@ -1,9 +1,17 @@
 package D1002;
 
-class Student {
+public class Student {
     int no;
     String name;
     int age;
+
+
+    static int sum;
+    {
+        sum++;
+        System.out.println(sum);
+    }
+
 
     void study() {
         System.out.println("Study");
@@ -16,8 +24,5 @@ class Student {
     void sleep() {
         System.out.println("Sleep");
     }
-    
-}
-public class stu {
     
 }
