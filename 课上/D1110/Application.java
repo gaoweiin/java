@@ -1,9 +1,9 @@
-package D1106;
+package D1110;
 
-abstract class Animal {
-    abstract void cry();
+interface  Animal {
+    void cry();
 
-    abstract String getAnimalName();
+    String getAnimalName();
 
 }
 
@@ -12,26 +12,24 @@ class Simulator {
         System.out.println(animal.getAnimalName());
         animal.cry();
     }
-
-    
 }
 
-class Dog extends Animal {
-    void cry() {
-        System.out.println("dgcry");
+class Dog implements Animal {
+    public void cry() {
+        System.out.println("Dog cry");
     }
 
-    String getAnimalName() {
+    public String getAnimalName() {
         return "Dog";
     }
 }
-x
-class Cat extends Animal {
-    void cry() {
-        System.out.println("cacry");
+
+class Cat implements Animal {
+    public void cry() {
+        System.out.println("Cat cry");
     }
 
-    String getAnimalName() {
+    public String getAnimalName() {
         return "Cat";
     }
 }
@@ -44,3 +42,4 @@ public class Application {
         simulator.playSound(new Cat());
     }
 }
+
