@@ -11,12 +11,15 @@ class Account {
 
     void 收入in(double money) {
         balance += money;
+        System.out.println("\n余额: "+balance);
     }
 
     void 支出out(double money) throws BallanceNotEnoughException {
         balance -= money;
         if (balance < 0) {
             throw new BallanceNotEnoughException("钱不够");
+        } else {
+            System.out.println("\n余额:"+balance);
         }
     }
 
@@ -31,6 +34,8 @@ public class TestMoney {
         } catch (BallanceNotEnoughException e) {
             // TODO: handle exception
             System.out.println(e.getMessage());
+        } finally {
+            System.out.println("End");
         }
 
     }
