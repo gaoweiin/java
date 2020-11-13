@@ -15,10 +15,11 @@ class Account {
     }
 
     void 支出out(double money) throws BallanceNotEnoughException {
-        balance -= money;
-        if (balance < 0) {
+        
+        if (balance < money) {
             throw new BallanceNotEnoughException("钱不够");
         } else {
+            balance -= money;
             System.out.println("\n余额:"+balance);
         }
     }
