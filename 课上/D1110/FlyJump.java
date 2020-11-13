@@ -32,7 +32,7 @@ public class FlyJump {
     public static void main(String[] args) {
         Locust l = new Locust();
         testFly(l);
-        Balloon b = new Balloon();
-        testFly(b);
+        System.out.println(2 <<2);
+        FlyJump.testFly(new Balloon());
     }
 }
