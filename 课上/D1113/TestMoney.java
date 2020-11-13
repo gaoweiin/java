@@ -14,9 +14,17 @@ class BallanceNotEnoughException extends Exception {
 class Account {
     private double balance;
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
     void 收入in(double money) {
         balance += money;
-        System.out.println("\n余额: "+balance);
+        
     }
 
     void 支出out(double money) throws BallanceNotEnoughException {
@@ -25,7 +33,6 @@ class Account {
             throw new BallanceNotEnoughException("钱不够");
         } else {
             balance -= money;
-            System.out.println("\n余额:"+balance);
         }
     }
 
@@ -40,7 +47,7 @@ public class TestMoney {
         } catch (BallanceNotEnoughException e) {
             System.out.println(e.getMessage());
         } finally {
-            System.out.println("End");
+            System.out.println(a.getBalance());
         }
 
     }
