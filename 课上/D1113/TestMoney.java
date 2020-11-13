@@ -1,9 +1,9 @@
 package D1113;
 
 class BallanceNotEnoughException extends Exception {
-    String message;
+    
     public BallanceNotEnoughException(String message) {
-        this.message = message;
+        super(message);
     }
 }
 
@@ -32,7 +32,7 @@ public class TestMoney {
             a.支出out(1000);
         } catch (BallanceNotEnoughException e) {
             //TODO: handle exception
-            System.out.println(e.message);
+            System.out.println(e.getMessage());
         }
         
     }
