@@ -1,6 +1,11 @@
 package D1113;
 
 class BallanceNotEnoughException extends Exception {
+    /**
+     *余额不足
+     */
+    private static final long serialVersionUID = 1L;
+
     public BallanceNotEnoughException(String message) {
         super(message);
     }
@@ -33,7 +38,6 @@ public class TestMoney {
             a.收入in(500);
             a.支出out(1000);
         } catch (BallanceNotEnoughException e) {
-            // TODO: handle exception
             System.out.println(e.getMessage());
         } finally {
             System.out.println("End");
