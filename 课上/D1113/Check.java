@@ -45,8 +45,8 @@ public class Check {
     public static void main(String[] args) {
         String name[] = { "苹果", "炸药", "西服", "硫酸", "手表", "硫磺" };
         boolean isdanger[] = { false, true, false, true, false, true };
-        Machine checkMachine = new Machine();
         Goods[] goods = new Goods[6];
+        Machine checkMachine = new Machine();
         for (int i = 0; i < 6; i++) {
             goods[i] = new Goods();
             goods[i].setName(name[i]);
