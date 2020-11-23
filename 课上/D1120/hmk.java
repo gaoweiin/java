@@ -42,29 +42,29 @@ class MyFrame2 extends JFrame {
 }
 
 class MyFrame3 extends JFrame {
-    MyFrame3() {
-        this.setTitle("MyFrame");
-        this.setSize(400, 300);
-        BorderLayout boder= new BorderLayout();
-        GridLayout grid = new GridLayout(5, 6);
-        setLayout(boder);
+//     MyFrame3() {
+//         this.setTitle("MyFrame");
+//         this.setSize(400, 300);
+//         BorderLayout boder= new BorderLayout();
+//         GridLayout grid = new GridLayout(5, 6);
+//         setLayout(boder);
 
         
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 6; j++) {
-                int ii = i + 1, jj = j + 1;
-                grid.add(new Label(ii + "c" + jj + "r"));
-            }
-        }
+//         for (int i = 0; i < 5; i++) {
+//             for (int j = 0; j < 6; j++) {
+//                 int ii = i + 1, jj = j + 1;
+//                 grid.add(new Label(ii + "c" + jj + "r"));
+//             }
+//         }
         
-        this.setVisible(true);
-    }
+//         this.setVisible(true);
+//     }
 }
 public class hmk {
     public static void main(String[] args) {
-        // new MyFrame();
-        // new MyFrame1();
-        // new MyFrame2();
-        new MyFrame3();
+        new MyFrame();
+        new MyFrame1();
+        new MyFrame2();
+        // new MyFrame3();
     }
 }
