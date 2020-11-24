@@ -84,9 +84,9 @@ class MyFrame4 extends JFrame {
 
 public class hmk {
     public static void main(String[] args) {
-        // new MyFrame();
-        // new MyFrame1();
-        // new MyFrame2();
-        new MyFrame3();
+        new MyFrame();
+        new MyFrame1();
+        new MyFrame2();
+        // new MyFrame3();
     }
 }
