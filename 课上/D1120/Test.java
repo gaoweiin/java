@@ -1,10 +1,13 @@
 package D1120;
 
-import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 
 class Win1 extends JFrame {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 5802517899020675873L;
     JButton jbt1;
 
     Win1(String title) {

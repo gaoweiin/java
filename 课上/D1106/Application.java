@@ -25,7 +25,7 @@ class Dog extends Animal {
         return "Dog";
     }
 }
-x
+
 class Cat extends Animal {
     void cry() {
         System.out.println("cacry");

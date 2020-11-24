@@ -1,3 +1,5 @@
+package 作业;
+
 import java.util.*;
 
 public class h0929 {
@@ -13,7 +15,7 @@ public class h0929 {
         int profit = new Scanner(System.in).nextInt();
         double salary = 3000;
         if (profit < 1001) {
-            
+            salary = profit;
         } else if (profit < 2001) {
             salary += 0.1 * profit;
         } else if (profit < 5001) {

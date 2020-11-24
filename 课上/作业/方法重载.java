@@ -1,3 +1,5 @@
+package 作业;
+
 class Book {
     String title;
     int pageNumber;

@@ -9,7 +9,7 @@ public class 成绩判断 {
         Scanner reader =new Scanner(System.in);
         System.out.print("输入成绩: ");
         int xx = reader.nextInt();
-        //if
+        reader.close();
         if (xx > 90 && xx <=100) {
             System.out.println("A");
         }

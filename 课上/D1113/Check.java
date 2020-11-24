@@ -22,6 +22,10 @@ class Goods {
 }
 
 class DangerException extends Exception {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     String message;
 
     public DangerException(String message) {
