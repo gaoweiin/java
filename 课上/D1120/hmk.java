@@ -7,7 +7,7 @@ class MyFrame extends JFrame {
     MyFrame() {
         this.setTitle("MyFrame");
         this.setSize(400, 300);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new FlowLayout(0,5,5));
         add(new JButton("Button1"));
         add(new JButton("Button2"));
         add(new JButton("Button3"));
@@ -45,21 +45,43 @@ class MyFrame3 extends JFrame {
     MyFrame3() {
         this.setTitle("MyFrame");
         this.setSize(400, 300);
-        BorderLayout boder= new BorderLayout();
-        GridLayout grid = new GridLayout(5, 6);
-        setLayout(boder);
+        // BorderLayout boder= new BorderLayout();
+        this.setLayout(new GridLayout(6, 6));
+        // setLayout(boder);
 
-        
+        for (int i = 0; i < 6; i++) {
+            if (i == 2) {
+                add(new JLabel("讲"));
+            } else if (i == 3) {
+                add(new JLabel("台"));
+            } else {
+                add(new JLabel(""));
+            }
+        }
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 6; j++) {
                 int ii = i + 1, jj = j + 1;
-                grid.add(new Label(ii + "c" + jj + "r"));
+                add(new Label(ii + "c" + jj + "r"));
             }
         }
-        
+
         this.setVisible(true);
     }
 }
+
+class MyFrame4 extends JFrame {
+    MyFrame4() {
+        this.setTitle("MyFrame");
+        this.setSize(400, 300);
+        this.setLayout(new FlowLayout(0, 5, 5));
+        JTextField text = new JTextField(10);
+        add(new JButton("Button1"));
+        add(new JButton("Button2"));
+        add(new JButton("Button3"));
+        this.setVisible(true);
+    }
+}
+
 public class hmk {
     public static void main(String[] args) {
         // new MyFrame();
