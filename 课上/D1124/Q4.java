@@ -5,11 +5,15 @@ import javax.swing.*;
 import java.util.*;
 
 class GuessInterger extends JFrame implements ActionListener {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     JButton jbt1;
     JButton jbt2 = new JButton("确定");
     JTextField text;
     JLabel j;
-    int x,temp;
+    int writenumber,temp;
     GuessInterger() {
         setLayout(new GridLayout(4,2));
         add(new JLabel("获取1到100之间随机数"));
@@ -17,10 +21,10 @@ class GuessInterger extends JFrame implements ActionListener {
         add(jbt1);
         jbt1.addActionListener(this);
         add(new JLabel("输入您的猜测"));
-        text = new JTextField(10);
+        text = new JTextField();
         add(text);
-        
         add(new JLabel("点击确定"));
+        jbt2.addActionListener(this);
         add(jbt2);
         add(new JLabel("反馈信息："));
         j = new JLabel("");
@@ -33,24 +37,20 @@ class GuessInterger extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e){
 
         if(e.getSource()==jbt2){
-            System.out.println("确定按钮被点击");
             temp=Integer.parseInt(text.getText());
-            System.out.println(temp);
-            System.out.println(x);
-            if(temp==x){
+            if(temp==writenumber){
                 j.setText("猜对了");
-            }else if(temp <x){
+            }else if(temp <writenumber){
                 j.setText("猜小了");
-            }else if(temp>x){
+            }else if(temp>writenumber){
                 j.setText("猜大了");
             }
         }
 
         if(e.getSource()==jbt1){
             Random r= new Random();
-            x=r.nextInt(100);
-            System.out.println(x);
-            j.setText("猜对了");
+            writenumber=r.nextInt(100);
+            System.out.println(writenumber);
         }
         
         
